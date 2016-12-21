@@ -38,7 +38,7 @@ legend {
 }
 
 input {
-  border-radius: 5px;
+  border-radius: 5px
 }
 
 input.bouton {
@@ -66,8 +66,32 @@ input[type=checkbox] {
   background: url("Images/course_c.png") no-repeat;
 }
 
+#info + label{
+  background: url("Images/info.png") no-repeat;
+}
+
+#info:checked + label{
+  background: url("Images/info_c.png") no-repeat;
+}
+
+#mediation + label{
+  background: url("Images/mediation.png") no-repeat;
+}
+
+#mediation:checked + label{
+  background: url("Images/mediation_c.png") no-repeat;
+}
+
+#repas + label{
+  background: url("Images/repas.png") no-repeat;
+}
+
+#repas:checked + label{
+  background: url("Images/repas_c.png");
+}
+
 input[type=checkbox] + label {
-  height: 100px;
+  height: 125px;
   width: 100px;
   background-size: 100% !important;
   display:inline-block;
