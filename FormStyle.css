@@ -5,18 +5,84 @@
 }
 
 header {
-  padding: 4rem;
+  padding: 1rem;
   color: #fff;
-  background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
+  /*background-image: linear-gradient(120deg, #999, #555);*/
   font-size: 250%;
   font-weight: bold;
 }
 
-h1 {
-  padding: 20px;
+.title{
+  font-size: 250%;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 1rem;
+  /*width: 200px;*/
+  margin: 0px;
+  float: none;
+  padding-left: 6rem;
+}
+
+.navbar-inverse button.navbar-toggle{
+  border-color: white;
+  float: right;
+  position: relative;
+  float: right;
+  margin-top: 20px;
+}
+
+div.navbar-brand{
+  width: auto;
+}
+
+nav a, nav a:hover, nav a:visited, nav a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav div{
+  margin-left: auto;
+  margin-right: auto;
+  /*float : none;*/
+}
+
+nav h1{
+  margin: auto;
+  padding: 0px;
+  width: auto;
   font-size: 200%;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: 400;
+}
+
+ .navbar, .navbar-inverse div.navbar-collapse{
+  border-radius: 0px;
+  border: 0px;
+  margin: 0px;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  border-color: white;
+}
+
+ul.nav{
+  display: inline-block;
+  float:none;
+}
+
+.navbar-inverse .navbar-nav li > a{
+  color: #ddd;
+  font-size: 120%;
+}
+
+div.container-fluid ul.nav li.active > a,
+div.container-fluid ul.nav li.active > a:hover{
+  font-weight: 600;
+  background-color: inherit;
+  font-size: 125%;
 }
 
 p {
@@ -38,12 +104,7 @@ fieldset.identite label{
   float: left;
 }
 
-fieldset.identite{
-  float: none;
-}
-
-fieldset.activite{
-  clear: left;
+fieldset.identite, fieldset.activite{
   float: none;
 }
 

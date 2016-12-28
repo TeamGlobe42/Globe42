@@ -9,15 +9,52 @@
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="FormStyle.css">
   </head>
+
   <body>
-    <header>
-      Globe 42
+    <header class="visible-md visible-lg visible-sm">
+      <nav id =“header-nav” class=“navbar navbar-default”>
+            <div class=“navbar-brand col-sm-12 col-md-6”>
+              <a href=https://globe42.wordpress.com/ target="_blank"><h1> Globe 42 </h1></a>
+            </div>
+      </nav>
     </header>
 
-    <h1>Formulaire participant</h1>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="title visible-xs">
+            <a href=https://globe42.wordpress.com/ target="_blank"> Globe 42 </a>
+
+          <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target=".navbar-collapse"
+                aria-expanded="false">
+            <span class="sr-only"> Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="form.html">Adhérant</a> </li>
+            <li> <a href="activite.html">Activités</a> </li>
+            <li> <a href="rendezvous.html">Rendez-Vous</a> </li>
+            <li> <a href="admin.html">Administration</a> </li>
+          </ul>
+        </div>
+
+      </div> <!--container-fluid -->
+    </nav>
+
+
+
+
+    <h2>Formulaire participant</h2>
 
     <form action="traitement.html" method="post">
-      <fieldset class="identite col-lg-6 col-md-6 col-sm-9 col-xs-12">
+      <fieldset class="identite col-lg-6 col-md-7 col-sm-9 col-xs-12">
         <legend>Identité</legend>
         <p><label for="Nom">Nom</label><input id="Nom" type="text" name="Nom" value="" size="30" required/></p>
         <p><label for="Prénom">Prénom</label><input id="Prénom" type="text" name="Prénom" value="" required/></p>
@@ -37,7 +74,7 @@
           </select>
         </p>
       </fieldset>
-      <fieldset class="activite col-lg-6 col-md-6 col-sm-9 col-xs-12">
+      <fieldset class="activite col-lg-6 col-md-7 col-sm-9 col-xs-12">
         <legend>Choix des activités</legend>
           <p>
             <input type="checkbox" name="doctor" value="" id="doctor"/>
@@ -54,5 +91,10 @@
       </fieldset>
       <input class="bouton" type="submit" name="" value="Envoyer"/>
     </form>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+
   </body>
 </html>
