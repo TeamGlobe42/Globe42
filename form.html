@@ -1,4 +1,3 @@
-<!doctype html>
 <!DOCTYPE html>
 <html>
   <head>
@@ -49,8 +48,6 @@
     </nav>
 
 
-
-
     <h2>Formulaire participant</h2>
 
     <form action="traitement.html" method="post">
@@ -66,14 +63,13 @@
         <p><label for="Papiers">Papiers</label><input id="Papiers" type="text" name="Papiers"required/></p>
         <p>
           <label for="Nationalité">Nationalité</label>
-          <select class="pays" name="Pays" id="Nationalité">
-            <option value="France">France</option>
-            <option value="Syrie">Syrie</option>
-            <option value="Grèce">Grèce</option>
-            <option value="Test">PaysAvecUnNomPlusLong</option>
+          <select class="pays" name="Pays" id="Nationalité" placeholder="Pays">
+            <option  disabled selected> _________________ </option>
+                <!-- Completee par le script loadcountries.js, appelée en fin de page -->
           </select>
         </p>
       </fieldset>
+
       <fieldset class="activite col-lg-6 col-md-7 col-sm-9 col-xs-12">
         <legend>Choix des activités</legend>
           <p>
@@ -89,12 +85,13 @@
                     <label for="repas"></label>
           </p>
       </fieldset>
+
       <input class="bouton" type="submit" name="" value="Envoyer"/>
     </form>
 
     <script src="js/jquery-2.1.4.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/loadcountries.js"></script>
 
   </body>
 </html>

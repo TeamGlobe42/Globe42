@@ -109,7 +109,6 @@ fieldset.identite, fieldset.activite{
 }
 
 fieldset {
-  width : 50%;
   margin-left: auto;
   margin-right: auto;
   border-width: 2px;
@@ -125,7 +124,7 @@ legend {
   border-bottom: 0px;
 }
 
-input, textarea{
+input, textarea, select{
   width: 50%;
   resize: none;
   border-radius: 5px;
@@ -155,7 +154,6 @@ input[type=checkbox] {
 select.pays {
   float: left;
   text-align: left;
-  width: auto;
   border-radius: 10px;
   padding : 2px;
   padding-left: 5px;
@@ -207,4 +205,40 @@ input[type=checkbox] + label {
   background-size: 100% !important;
   display:inline-block;
   cursor:pointer;
+}
+
+/*** Spécificités à la page Activités ***/
+table.activite{
+  margin: auto;
+  text-align: center;
+  float: none;
+  border-collapse: collapse;
+}
+
+div.activite{
+  margin: auto;
+  float: none;
+  margin-top: 20px;
+}
+
+tbody, th{
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eee;
+  border-color: black;
+  height: 10px;
+  overflow: hidden;
+}
+
+th{
+  background-color: #999;
+  border-bottom : 2px solid;
+  border-color: black;
+  color: white;
+}
+
+tr:nth-child(odd){
+  background-color: #ddd;
 }
